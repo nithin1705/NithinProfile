@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/skills">Skills</a>
+        <a href="/projects">Projects</a>
+        <a href="/education">Education</a>
+        <a href="/contact">Contact</a>
+    </nav>
+
+    <div class="contact-container">
+
+        <h1>Contact Me</h1>
+        <p>Fill out the form and I’ll get back to you.</p>
+
+        <form method="POST">
+
+            <input type="text" name="name" placeholder="Your Name" required>
+
+            <input type="email" name="email" placeholder="Your Email" required>
+
+            <input type="text" name="phone" placeholder="Phone Number" required>
+
+            <textarea name="message"
+            placeholder="Write your message..."
+            required></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

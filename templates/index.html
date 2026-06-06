@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nithin | Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins',sans-serif;
+        }
+
+        body{
+            background:#0f172a;
+            color:white;
+        }
+
+        /* Navbar */
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px 10%;
+            background:rgba(255,255,255,0.05);
+            backdrop-filter: blur(10px);
+            position:sticky;
+            top:0;
+        }
+
+        .logo{
+            font-size:28px;
+            font-weight:bold;
+            color:#38bdf8;
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+        }
+
+        nav ul li{
+            margin-left:25px;
+        }
+
+        nav ul li a{
+            text-decoration:none;
+            color:white;
+            transition:0.3s;
+        }
+
+        nav ul li a:hover{
+            color:#38bdf8;
+        }
+
+        /* Hero Section */
+        .hero{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:80px 10%;
+            min-height:90vh;
+        }
+
+        .hero-text h1{
+            font-size:55px;
+        }
+
+        .hero-text span{
+            color:#38bdf8;
+        }
+
+        .hero-text p{
+            margin-top:15px;
+            color:#cbd5e1;
+            max-width:500px;
+            line-height:1.8;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:20px;
+            padding:12px 28px;
+            background:#38bdf8;
+            color:black;
+            border-radius:30px;
+            text-decoration:none;
+            font-weight:600;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            color: red;
+        }
+
+        .profile-card{
+            width:320px;
+            height:320px;
+            border-radius:50%;
+            background:linear-gradient(135deg,#38bdf8,#2563eb);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            box-shadow:0 0 30px rgba(56,189,248,0.4);
+        }
+
+        .profile-card img{
+            width:290px;
+            height:290px;
+            border-radius:50%;
+            object-fit:cover;
+        }
+
+        /* Section */
+        section{
+            padding:80px 10%;
+        }
+
+        h2{
+            font-size:35px;
+            margin-bottom:20px;
+            color:#38bdf8;
+        }
+
+        .skills{
+            display:flex;
+            gap:15px;
+            flex-wrap:wrap;
+        }
+
+        .skill-box{
+            background:#1e293b;
+            padding:15px 25px;
+            border-radius:12px;
+            transition:0.3s;
+        }
+
+        .skill-box:hover{
+            transform:translateY(-5px);
+            background:#2563eb;
+        }
+
+        /* Projects */
+        .project-container{
+            display:flex;
+            gap:20px;
+            flex-wrap:wrap;
+        }
+
+        .project-card{
+            background:#1e293b;
+            padding:20px;
+            border-radius:15px;
+            width:300px;
+            transition:0.3s;
+        }
+
+        .project-card:hover{
+            transform:translateY(-10px);
+        }
+
+        footer{
+            text-align:center;
+            padding:20px;
+            background:#1e293b;
+            margin-top:50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/skills">Skills</a>
+        <a href="/projects">Projects</a>
+        <a href="/education">Education</a>
+        <a href="/contact">Contact</a>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Hi, I'm <span>Nithin</span></h1>
+            <h3>B.Tech Information Science Student</h3>
+
+            <p>
+                Passionate about web development, business analysis,
+                and software projects. I enjoy building modern
+                applications and solving real-world problems.
+            </p>
+
+            <a href="#" class="btn">Download Resume</a>
+        </div>
+
+        <div class="profile-card">
+            <img src="profile.jpg" alt="Profile">
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a B.Tech Information Science student with knowledge in
+            C, Java, HTML, CSS, and backend technologies. I have worked
+            on projects like FitZone Gym Membership System and
+            Text-to-Speech Mini Project.
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <div class="skills">
+            <div class="skill-box">HTML</div>
+            <div class="skill-box">CSS</div>
+            <div class="skill-box">JavaScript</div>
+            <div class="skill-box">Java</div>
+            <div class="skill-box">C</div>
+            <div class="skill-box">MySQL</div>
+            <div class="skill-box">Node.js</div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-container">
+
+            <div class="project-card">
+                <h3>FitZone Gym System</h3>
+                <p>
+                    Developed a gym membership system using HTML,
+                    Node.js, Express, and MySQL.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Text-to-Speech</h3>
+                <p>
+                    Built a mini project that converts text into speech.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: yourmail@gmail.com</p>
+        <p>Phone: +91 XXXXX XXXXX</p>
+    </section>
+
+    <footer>
+        © 2026 Nithin | Portfolio Website
+    </footer>
+
+</body>
+</html>
